@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <auto_cache_flush>
+            <cache_flush_group>
+                <enabled_flush_cache>1</enabled_flush_cache>
+            </cache_flush_group>
+        </auto_cache_flush>
+    </default>
+</config>

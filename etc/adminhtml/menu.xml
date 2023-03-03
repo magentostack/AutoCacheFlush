@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Waqas_AutoCacheFlush::menu"
+             title="Auto Cache Flush"
+             module="Waqas_AutoCacheFlush"
+             sortOrder="20"
+             parent="Waqas_Core::waqas"
+             resource="Waqas_AutoCacheFlush::menu"/>
+        <add id="Waqas_AutoCacheFlush::configuration"
+             title="Configuration"
+             module="Waqas_AutoCacheFlush"
+             sortOrder="30"
+             action="admin/system_config/edit/section/auto_cache_flush"
+             resource="Waqas_AutoCacheFlush::configuration"
+             parent="Waqas_AutoCacheFlush::menu"
+        />
+    </menu>
+</config>

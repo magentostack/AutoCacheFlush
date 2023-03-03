@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="auto_cache_flush" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="0"
+                 showInStore="0" canRestore="1">
+            <label>Auto Cache Flush</label>
+            <tab>waqas</tab>
+            <resource>Waqas_AutoCacheFlush::configuration</resource>
+            <group id="cache_flush_group" translate="label" type="text" sortOrder="10" showInDefault="1" canRestore="1">
+                <label>Auto Cache Flush Configuration</label>
+                <field id="enabled_flush_cache" translate="label comment" type="select" sortOrder="10" showInDefault="1"
+                       canRestore="1">
+                    <label>Enable Auto Cache Flush</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>When it's enabled, the cache which is invalidated get flushed automatically</comment>
+                </field>
+                <field id="cache_types" showInDefault="1" sortOrder="20" translate="label" type="multiselect">
+                    <label>Cache Types</label>
+                    <comment>Choose the cache types you want to flush when get invalidated</comment>
+                    <source_model>Waqas\AutoCacheFlush\Model\Config\Source\CacheTypes</source_model>
+                    <depends>
+                        <field id="enabled_flush_cache">1</field>
+                    </depends>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
