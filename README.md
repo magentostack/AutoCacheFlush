@@ -1,6 +1,6 @@
 # Overview #
 
-It is very annoying to flush cache manually. To solve this issue, PHP Studios provides a solution.
+It is very annoying to flush cache manually. To solve this issue,  provides a solution.
 ### Features ###
 
 * Select caches you want to flush from admin configuration.
